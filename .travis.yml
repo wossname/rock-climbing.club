@@ -1,0 +1,16 @@
+language: ruby
+cache:
+  bundler: true
+  apt: true
+  directories:
+  - build
+  - node_modules
+before_install: nvm install v5.11.1
+install: bundle install --jobs=3 --retry=3 && npm install
+script: bundle exec rake deploy
+branches:
+  only:
+  - master
+notifications:
+  slack:
+    secure: V9PzsA5dAjIkYd9LyStW8brukW5z9WGIC8OxARrr297d4/PNbrjSYrHkPa2zxOeRv7s42e3S/1QfPwmX8KXpAc5RVrn4kTSTdW2rAevl7K5dFnok0wQe4nvDiz60Pl9pHDGq9F6d7BsHjaNouIzXdK2HxxQAXoXv0HlXy3Tpakefx3nd4GuSZqd8k6iLPwXTr0+hBhdK+YQPUFeqCdBuM1ffh0BYHjxSEeVrUpZmqu61UOsKoY1tKpBRe8xkPOa7QTAkwj2r7L9v19bMAsJg+Qd3cnNoU1Wgst7tLhCISa9+vj2bDDLxKRXUGBA02v9YAfZgY7iMUDPO5mD5V+vZY3YTPnl781nXnmE2vvXIYKV+wo+TDWZ9hPkKD9oTDAGQVErtxy6EHUPKjxChWqegSEgcM4V70XqAYTFoB7bzwy9i3bXMG37aBhkduSLHS4nCWZvciczai+jJrvu5ZvOAHhXAZ1EY7HSsgCMo9ab9LicQ2iN+8uIEzdG5tW1vRKssrfoECmacBLEyaHcAtUb4oqgEmdA7SMCIoycP32C/zpavB3Pq+jxt4mph/e4LXNUIrqUW786vlDnuOhLEa4Zqun75POLfarClYkRlQKxgxsA8EYbOg+zHqSw9a5vzKxco6XCyu2k5fVHI6HJW80/nIzp+VmT7vbfp0H0/Pm267HY=

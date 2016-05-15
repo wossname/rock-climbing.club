@@ -1,0 +1,55 @@
+<p>
+  Sign up to the mailing list to get updates on how the project is
+  progressing and hear when I release the first episode! I promise not to
+  do anything evil with your email address. I'll not sell it on to anyone
+  else, and I'll only use it to contact you about relevant things.
+</p>
+
+<div id="mc_embed_signup" style="padding-top: 3em">
+  <form action="<%= config[:mailchimp_url] %>" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-horizontal" novalidate>
+
+    <div class="mc-field-group form-group form-group-lg">
+      <label class="col-sm-4 control-label" for="mce-FNAME">First Name</label>
+      <div class="col-sm-6">
+        <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="Johnny">
+      </div>
+    </div>
+
+    <div class="mc-field-group form-group form-group-lg">
+      <label class="col-sm-4 control-label" for="mce-LNAME">Last Name</label>
+      <div class="col-sm-6">
+        <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME" placeholder="Appleseed">
+      </div>
+    </div>
+
+    <div class="mc-field-group form-group form-group-lg">
+      <label class="col-sm-4 control-label" for="mce-EMAIL">Email Address</label>
+      <div class="col-sm-6">
+        <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="john.appleseed@apple.com">
+      </div>
+    </div>
+
+    <div class="mc-field-group form-group">
+      <div class="col-sm-6 col-sm-offset-4">
+        <div class="checkbox" style="text-align: left">
+          <label>
+            <% gid = config[:mailchimp_group_id] %>
+            <input type="hidden" value="2" name="group[<%= gid %>]" id="mce-group[<%= gid %>]-<%= gid %>-1">
+            <input type="checkbox" checked="checked" value="1" name="group[<%= gid %>]" id="mce-group[<%= gid %>]-<%= gid %>-0">
+            Yes, I'd like to hear occasional announcements about other Wossname Industries projects!
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+      <input type="text" name="<%= config[:mailchimp_antispam] %>" tabindex="-1" value="">
+    </div>
+
+    <div class="form-group" style="text-align: left">
+      <div class="col-sm-6 col-sm-offset-4">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-u btn-u-lg">
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,26 @@
+<% wrap_layout :layout do %>
+  <div class="coming-soon-border"></div>
+  <div class="coming-soon-bg-cover"></div>
+
+  <div class="container cooming-soon-content">
+    <div class="row">
+      <div class="col-md-12 coming-soon">
+        <h1>How I Code.</h1>
+
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+
+  <div class="container coming-soon">
+    <div class="row">
+      <div class="col-md-12">
+        <p style="text-align: right">
+          Copyright  &copy; <%= Time.now.year %>
+          <%= utm_link_to 'Wossname Industries', 'https://woss.name/', content: 'wossname-industries-footer' %>.
+          All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+<% end %>
