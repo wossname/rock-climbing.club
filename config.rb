@@ -1,23 +1,23 @@
 # General configuration
-config[:domain]                  = 'howicode.com'
+config[:domain]                  = 'rock-climbing.club'
 config[:www_prefix]              = false
-config[:cloudfront_distribution] = 'ES5EDHXD7WPUA'
+config[:cloudfront_distribution] = 'E35YSFXELPRR2T'
 config[:twitter_owner]           = 'wossname'
 config[:twitter_creator]         = 'mathie'
-config[:fb_app_id]               = '276208079383599'
-config[:gtm_id]                  = 'GTM-WQZC49'
+config[:fb_app_id]               = '1135835656474591'
+config[:gtm_id]                  = 'GTM-59XJQF'
 
 # Generic metadata
-config[:short_title]   = 'How I Code'
-config[:long_title]    = "#{config[:short_title]}: A conversation on the art and craft of software development"
-config[:description]   = "I want to go on a holistic exploration of how developers write code in a sustainable, enjoyable way."
+config[:short_title]   = 'Rock Club'
+config[:long_title]    = "#{config[:short_title]}: Record your climbs. Measure your progress. Find friends to climb with."
+config[:description]   = "Have you ever wondered how well you're climbing, how much better you're getting after all these sessions you're putting in at the local climbing wall?"
 config[:logo]          = 'wossname-industries.png'
 config[:company]       = 'Wossname Industries'
 config[:company_url]   = 'https://woss.name/'
 config[:telephone]     = '+44 (0)7949 077744'
 config[:site_category] = "Software Development"
-config[:site_tags]     = ['Podcast', 'Software Development', 'Productivity',
-                          'Sustainability']
+config[:site_tags]     = ['Climbing', 'Rock Climbing', 'Indoor Climbing',
+                          'Health', 'Fitness']
 
 config[:related] = {
   # facebook: 'https://www.facebook.com/wossname-industries',
@@ -27,13 +27,13 @@ config[:related] = {
 }
 
 # Mailing list signup form configuration
-config[:mailchimp_url]      = "//howicode.us1.list-manage.com/subscribe/post?u=e2954746a3d6f76209fcd2a6a&amp;id=1038bb42e1"
-config[:mailchimp_group_id] = "5137"
-config[:mailchimp_antispam] = "b_e2954746a3d6f76209fcd2a6a_1038bb42e1"
+config[:mailchimp_url]      = "//club.us1.list-manage.com/subscribe/post?u=e2954746a3d6f76209fcd2a6a&amp;id=c759281a19"
+config[:mailchimp_group_id] = "5149"
+config[:mailchimp_antispam] = "b_e2954746a3d6f76209fcd2a6a_c759281a19"
 
 # UTM-related bits
 config[:default_utm_medium]   = 'website'
-config[:default_utm_campaign] = 'howicode'
+config[:default_utm_campaign] = 'rock-climbing.club'
 
 # Calculated Configuration
 config[:hostname]           = config[:www_prefix] ? "www.#{config[:domain]}" : config[:domain]

@@ -1,18 +1,18 @@
 {
-  "name": "howicode.com",
+  "name": "rock-climbing.club",
   "version": "1.0.0",
   "private": true,
-  "description": "How I Code: A conversation on the art and craft of software development.",
+  "description": "Record your climbs. Measure your progress. Find friends to climb with.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wossname/howicode.com.git"
+    "url": "git+https://github.com/wossname/rock-climbing.club.git"
   },
   "author": "Graeme Mathieson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wossname/howicode.com/issues"
+    "url": "https://github.com/wossname/rock-climbing.club/issues"
   },
-  "homepage": "https://howicode.com/",
+  "homepage": "https://rock-climbing.club/",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "cssnano": "^3.5.2",
